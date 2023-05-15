@@ -11,13 +11,13 @@ body {
 /* Header/logo Title */
 .header {
   padding: 110px;
-  text-align: center;
+  text-align: left; /*otázka 10*/
   background-image: url("./images/landscape.jpg");
 }
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 50px;
+  font-size: 60px; /* otázka 2 */
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
@@ -30,17 +30,17 @@ body {
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
+  float: right; /*otázka 9 - první část*/
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 16px 22px; /* otázka 8*/
   text-decoration: none;
 }
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  float: left; /*otázka 9 - druhá část*/
 }
 
 /* Change color on hover */
@@ -51,8 +51,8 @@ body {
 
 /* Active/current link */
 .navbar a.active {
-  background-color: #666;
-  color: white;
+  background-color: rgb(0, 238, 255); /* otázka 7*/
+  color: rgb(0, 0, 0);
 }
 
 /* Column container */
@@ -64,20 +64,21 @@ body {
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #000000;
+  color: #fff; /*otázka 6*/
   padding: 20px;
 }
 
 /* Main column */
 .main {   
   flex: 70%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 100px; /*otazka 5*/
   background: #474747;
 }
 
@@ -85,7 +86,7 @@ body {
 .footer p {
   text-align: center;
   font-size: 14px;
-  color: #d8d8d8;
+  color: #2bff00; /* otazka 4 */
 }
 
 /* Basic styles for the post */
@@ -93,7 +94,7 @@ body {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(255, 0, 0); /*otázka 3*/
 }
 
 /* Styles for the post heading */
@@ -104,7 +105,7 @@ body {
 
 /* Styles for the post image */
 img {
-  max-width: 100%;
+  max-width: 90%; /*Otázka 1*/
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
